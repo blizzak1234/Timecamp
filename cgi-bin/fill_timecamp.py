@@ -11,9 +11,6 @@ target_weekday = form.getfirst("target_weekday", None)
 weekday_filter = form.getfirst("weekday_filter", None)
 
 
-# api_token = "f7b21441c6aa6fa57f66a3aa4b"
-
-
 # task_id = 67506246  # refinement
 # task_id = 67722746  # daily
 # task_id = 68282992  # retro
