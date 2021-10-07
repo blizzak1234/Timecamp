@@ -8,25 +8,13 @@
     <form action="/cgi-bin/fill_timecamp.py">
 		API token <input type="text" name="api_token"> You can find API token right <a href="https://app.timecamp.com/app#/settings/users/me">here</a> on the bottom of the page<br>
 		<br>
-        Date to copy <input type="date" name="date_to_copy"> Select the date to copy tasks from.<br>
+        Date to copy start <input type="date" name="date_to_copy_start"> Select the start date to copy tasks from.<br>
+		Date to copy end <input type="date" name="date_to_copy_end"> Select the end date to copy tasks from.<br>
 		<br>
 		Select the first and last days where you want to copy tasks.<br>
-		Start date <input type="date" name="start"><br>
-		End date <input type="date" name="end"><br>
+		Start date <input type="date" name="target_date_start"><br>
+		End date <input type="date" name="target_date_end"><br>
 		<br>
-		<label for="target_weekday">Select a target weekday:</label>
-		<select id="target_weekday" name="target_weekday">
-		  	<option value="Monday">Monday</option>
-		  	<option value="Tuesday">Tuesday</option>
-		  	<option value="Wednesday">Wednesday</option>
-		  	<option value="Thursday">Thursday</option>
-			<option value="Friday">Friday</option>
-		</select><br>
-		  <input type="radio" id="every day" name="weekday_filter" value=False>
-		  <label for="every day">Copy to every target weekday</label><br>
-		  <input type="radio" id="filtered" name="weekday_filter" value=True>
-		  <label for="filtered">Copy to every second target weekday</label><br>
-		  <br>
         Start <input type="submit">
     </form>
 </body>
